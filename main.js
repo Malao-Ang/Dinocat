@@ -1,12 +1,25 @@
+const express = require('express');
+const bodyParser = require("body-parser");
+const app = express();
+const port = 3000;
+
 var charactor = document.getElementById("dino");
 var obsctracle = document.getElementById("obstrucle");
-var obsctracle2 = document.getElementById("obstrucle2");
-var canvas = document.getElementById("canvas");
+// var canvas = document.getElementById("canvas");
 var point = document.getElementById("point");
 var template = document.getElementById("startGame");
 var titleStrat = document.getElementById('Title-Strat');
 var start = false;
 var count = 0;
+
+
+
+app.get('/', function (req, res) {
+  res.sendFile(__dirname+'index.html')
+})
+app.listen(port,()=>{
+    console.log('lisning at port 3000,')
+})
 
 function CheckStrat() {
   start = true;
