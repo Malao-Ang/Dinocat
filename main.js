@@ -1,7 +1,7 @@
 const express = require('express');
 const bodyParser = require("body-parser");
 const app = express();
-const port = 3000;
+const port = 3000 || process.env.PORT;
 
 var charactor = document.getElementById("dino");
 var obsctracle = document.getElementById("obstrucle");
