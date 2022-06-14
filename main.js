@@ -47,7 +47,7 @@ var checkDead = setInterval(() => {
    
     obsctracle.style.animation = "none";
     charactor.style.animation = "none";
-    alert("You point =  ♟"+count);
+    alert("♟You point =  "+count);
     window.location.reload()
 
     
